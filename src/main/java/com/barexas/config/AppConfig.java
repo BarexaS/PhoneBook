@@ -13,7 +13,7 @@ import org.springframework.web.servlet.view.JstlView;
 import org.springframework.web.servlet.view.UrlBasedViewResolver;
 
 @Configuration
-@PropertySource("application.properties")
+@PropertySource("classpath:application.properties")
 @PropertySource(value = "file:${lardi.conf}", ignoreResourceNotFound = true)
 public class AppConfig {
     @Autowired
